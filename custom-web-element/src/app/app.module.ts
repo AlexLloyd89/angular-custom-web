@@ -10,8 +10,7 @@ import { LocationComponent } from "./location/location.component";
   declarations: [AppComponent, LocationComponent],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
-  bootstrap: [],
-  entryComponents: [LocationComponent],
+  bootstrap: [AppComponent, LocationComponent],
 })
 export class AppModule implements DoBootstrap {
   constructor(private injector: Injector) {}
