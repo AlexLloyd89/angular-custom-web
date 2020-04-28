@@ -1,0 +1,8 @@
+<!--if no city, show the loading H1-->
+<ng-container *ngIf="city; else loading">
+  <h1>Current City: {{ city }}</h1>
+</ng-container>
+
+<ng-template #loading>
+  <h1>loading...</h1>
+</ng-template>
